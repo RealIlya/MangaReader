@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MangaReader.Views.ChapterPage"
+             xmlns:viewModels="clr-namespace:MangaReader.ViewModels;assembly=MangaReader"
+             Title="{Binding ChapterInfo.Header}">
+
+    <Grid Margin="5">
+        <!-- <Grid.RowDefinitions> -->
+        <!--     <RowDefinition Height="*" /> -->
+        <!--     <RowDefinition Height="Auto" /> -->
+        <!-- </Grid.RowDefinitions> -->
+        <!-- <Frame Grid.Row="0" BackgroundColor="Bisque"> -->
+        <!--     <Image Source="{Binding CurrentImage, Mode=OneWay}" Aspect="AspectFit" /> -->
+        <!-- </Frame> -->
+        <!-- <StackLayout Grid.Row="1"> -->
+        <!--     <Slider Value="{Binding CurrentIndexImage, Mode=TwoWay}" -->
+        <!--             Maximum="{Binding ImageChapters.Count}" /> -->
+        <!--     <Label Text="{Binding CurrentIndexImage, Mode=TwoWay}" FontSize="Small" /> -->
+        <!-- </StackLayout> -->
+        <StackLayout>
+            <CarouselView ItemsSource="{Binding ImageChapters}" Position="{Binding CurrentIndexImage}" Loop="False">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame>
+                            <Image Source="{Binding Image}" />
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <!-- <Slider Value="{Binding CurrentIndexImage}" -->
+            <!--         Maximum="{Binding ImageChapters.Count}" /> -->
+        </StackLayout>
+    </Grid>
+</ContentPage>

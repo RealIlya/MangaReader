@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MangaReader.Models;assembly=MangaReader"
+             xmlns:viewModels="clr-namespace:MangaReader.ViewModels;assembly=MangaReader"
+             x:Class="MangaReader.Views.MangaPage"
+             Title="{Binding MangaInfo.Header }">
+    <ContentPage.BindingContext>
+        <viewModels:MangaViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Margin="5">
+        <ListView x:Name="ListView" ItemsSource="{Binding MangaInfo.Chapters}"
+                  SelectedItem="{Binding SelectedChapter, Mode=Default}"
+                  SeparatorColor="DarkRed" CachingStrategy="RecycleElementAndDataTemplate">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid Margin="3" x:Name="Item">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Header}" />
+                                <!-- Желательно вынести в отдельный шаблон стиля -->
+                                <ImageButton Grid.Column="1"
+                                             BindingContext="{Binding Source={x:Reference ListView}, Path=BindingContext }"
+                                             Command="{Binding DownloadCommand}"
+                                             CommandParameter="{Binding Source={x:Reference Item}, Path=BindingContext}"
+                                             BackgroundColor="Transparent"
+                                             Source="download.png" />
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

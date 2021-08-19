@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\Views\MangaPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\Views\MangasListPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.dll
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.pdb
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\bin\Debug\netstandard2.0\MangaReader.deps.json
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\bin\Debug\netstandard2.0\MangaReader.dll
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\bin\Debug\netstandard2.0\MangaReader.pdb
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\Views\ChapterPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\MangaReader\MangaReader\MangaReader\obj\Debug\netstandard2.0\MangaReader.csprojAssemblyReference.cache

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MangaReader.Views.MangasListPage"
+             xmlns:model="clr-namespace:MangaReader.Models;assembly=MangaReader"
+             xmlns:viewModels="clr-namespace:MangaReader.ViewModels;assembly=MangaReader">
+    <ContentPage.BindingContext>
+        <viewModels:MangasListViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Margin="5">
+        <Label Text="Everything Manga of The Earth!" FontSize="Title" />
+        <ListView ItemsSource="{Binding Mangas}" SelectedItem="{Binding SelectedManga, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Margin="3">
+                                <!-- Здесь могла быть картинка... -->
+                                <Label Text="{Binding Header}" FontSize="Subtitle" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
